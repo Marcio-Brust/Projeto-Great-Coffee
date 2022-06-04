@@ -10,9 +10,11 @@ function toggleMenu(event) {
   const active = nav.classList.contains("active");
   event.currentTarget.setAttribute("aria-expanded", active);
   if (active) {
-    btnMobile.innerHTML = '<img src="assets/img/menu-buguer-close.svg" alt>';
+    btnMobile.innerHTML =
+      '<img src="/Great-Coffee/assets/img/menu-buguer-close.svg" alt>';
   } else {
-    btnMobile.innerHTML = '<img src="assets/img/menu-buguer-open.svg" alt>';
+    btnMobile.innerHTML =
+      '<img src="/Great-Coffee/assets/img/menu-buguer-open.svg" alt>';
   }
 }
 
