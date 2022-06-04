@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+body,
+h1,
+h2,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Manrope", sans-serif;
+  color: #f1f1f1;
+  white-space: nowrap;
+}
+h1,
+h2 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 6rem;
+}
+
+h2 {
+  text-shadow: -1px -1px 0 #8257e5, -1px 1px 0 #8257e5, 1px -1px 0 #8257e5,
+    1px 0 0 #8257e5;
+  color: #111;
+}
+
+h2::before {
+  content: "<";
+}
+h2::after {
+  content: "/>";
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+body {
+  background: #111;
+  text-align: center;
+  align-items: center;
+  background-image: url(/assets/img/blur-1.png), url(/assets/img/blur-2.png);
+  background-position: bottom left, top right;
+  background-repeat: no-repeat, no-repeat;
+}
+img {
+  display: block;
+  width: 100%;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu {
+  display: flex;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 800px) {
+  .menu a {
+    display: block;
+    padding: 60px 30px;
+  }
+  .btn-mobile {
+    display: none;
+  }
+}
+
+.texto {
+  display: none;
+}
+.logo {
+  display: none;
+}
+.pagarCafe {
+  display: none;
+}
+.btn-pagarCafeDesk {
+  display: block;
+  padding: 10px 30px;
+  border: solid 1px #8257e5;
+  border-radius: 0.4rem;
+}
+.blueMobile {
+  display: none;
+}
+@media (max-width: 800px) {
+  body {
+    background-image: none;
+  }
+  footer {
+    display: block;
+    position: relative;
+    bottom: 0px;
+  }
+  .blueMobile {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    height: 400px;
+  }
+
+  .logo {
+    display: block;
+  }
+  .texto {
+    display: block;
+  }
+  .rodape.active {
+    transition: 1s;
+    opacity: 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-top: 50px;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .logoDesk {
+    display: none;
+  }
+  .nav {
+    width: auto;
+  }
+  .btn-pagarCafeDesk {
+    display: none;
+  }
+
+  #header {
+    width: 100%;
+    box-sizing: border-box;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 2px #29292e;
+  }
+
+  .principal {
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    right: 0;
+    transition: 0.6s;
+    z-index: 10000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+    background: #111;
+    text-align: start;
+  }
+  .pagar {
+    display: grid;
+    align-content: center;
+  }
+  .btn-mobile {
+    border: transparent;
+    background: transparent;
+    margin-right: 20px;
+    padding: 10px 0px;
+  }
+  .logo {
+    margin-left: 20px;
+  }
+
+  .nav.active .menu {
+    height: calc(100vh - 80px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .menu li {
+    display: block;
+    padding: 1.5rem 0;
+    border-bottom: solid 2px #29292e;
+    border-left: solid 4px transparent;
+  }
+  .menu li a {
+    margin-left: 10px;
+  }
+
+  .menu li:hover {
+    border-left: solid 4px #8257e5;
+  }
+
+  .texto {
+    font-size: 1.5rem;
+    margin: 5px;
+    margin-top: 40px;
+  }
+  .btn-pagarCafe {
+    display: block;
+    padding: 10px 30px;
+    border: solid 1px #8257e5;
+    border-radius: 0.4rem;
+    margin-top: 40px;
+  }
+  .btn-pagarCafe::after {
+    content: url(/assets/img/arrow.svg);
+    margin-left: 5px;
+    position: absolute;
+    margin-top: 2px;
+  }
+  .pagarCafe {
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 500px) and (min-height: 700px) {
+    footer {
+      display: block;
+      position: absolute;
+      bottom: 0px;
+    }
+    .blueMobile {
+      display: block;
+      position: absolute;
+      bottom: 0px;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  @media (min-height: 700px) {
+    .btn-pagarCafe {
+      display: block;
+      padding: 10px 30px;
+      border: solid 1px #8257e5;
+      border-radius: 0.4rem;
+      margin-top: 80px;
+    }
+    @media (min-height: 800px) {
+      .btn-pagarCafe {
+        display: block;
+        padding: 10px 30px;
+        border: solid 1px #8257e5;
+        border-radius: 0.4rem;
+        margin-top: 80px;
+      }
+      .texto {
+        font-size: 2rem;
+        margin: 5px;
+        margin-top: 100px;
+      }
+      h1 {
+        font-size: 2.8rem;
+        margin-top: 50px;
+      }
+      h2 {
+        font-size: 2.9rem;
+      }
+    }
+  }
+}
