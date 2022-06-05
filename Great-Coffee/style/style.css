@@ -42,8 +42,7 @@ body {
   background: #111;
   text-align: center;
   align-items: center;
-  background-image: url(/Great-Coffee/assets/img/blur-1.png),
-    url(/Great-Coffee/assets/img/blur-2.png);
+  background-image: url(../assets/img/blur-1.png), url(../assets/img/blur-2.png);
   background-position: bottom left, top right;
   background-repeat: no-repeat, no-repeat;
 }
