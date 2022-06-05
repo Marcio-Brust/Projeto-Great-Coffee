@@ -217,7 +217,7 @@ footer {
     margin-top: 40px;
   }
   .btn-pagarCafe::after {
-    content: url(/Great-Coffee/assets/img/arrow.svg);
+    content: url(/Great-Coffee/assets/img/arrow.svg); 
     margin-left: 5px;
     position: absolute;
     margin-top: 2px;
