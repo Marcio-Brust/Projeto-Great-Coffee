@@ -19,7 +19,7 @@ h1,
 h2 {
   font-family: "Manrope", sans-serif;
   font-weight: 800;
-  font-size: 8rem;
+  font-size: 6rem;
 }
 
 h2 {
@@ -72,9 +72,6 @@ img {
 .rodape {
   display: flex;
   justify-content: center;
-  bottom: 0;
-  position: fixed;
-  width: 100%;
 }
 
 @media (min-width: 800px) {
