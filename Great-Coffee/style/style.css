@@ -13,13 +13,13 @@ a {
   white-space: nowrap;
 }
 h1 {
-  margin-top: -80px;
+  margin-top: -10px;
 }
 h1,
 h2 {
   font-family: "Manrope", sans-serif;
   font-weight: 800;
-  font-size: 8rem;
+  font-size: 7rem;
   letter-spacing: -0.4rem;
 }
 
@@ -61,7 +61,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 410px;
+  height: 200px;
 }
 .nav {
   width: 100%;
@@ -75,6 +75,9 @@ img {
 .rodape {
   display: flex;
   justify-content: center;
+}
+.copo {
+  width: 900px;
 }
 
 @media (min-width: 800px) {
@@ -234,6 +237,9 @@ img {
     display: flex;
     justify-content: center;
   }
+  .copo {
+    width: 100%;
+  }
   @media (max-width: 500px) and (min-height: 700px) {
     footer {
       display: block;
@@ -244,6 +250,9 @@ img {
       display: block;
       position: absolute;
       bottom: 0px;
+    }
+    .copo {
+      width: 100%;
     }
   }
 
