@@ -138,9 +138,11 @@ img {
   h1 {
     font-size: 3rem;
     margin-top: 50px;
+    letter-spacing: 0rem;
   }
   h2 {
     font-size: 3rem;
+    letter-spacing: 0rem;
   }
   .logoDesk {
     display: none;
