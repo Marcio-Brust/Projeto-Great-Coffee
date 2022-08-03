@@ -1,9 +1,9 @@
 const $ = document.querySelector.bind(document);
 const btnMobile = $(".btn-mobile");
 const footer = $(".rodape");
-const width = window.innerWidth;
+const eventos = ["click", "touchstart"];
+
 function toggleMenu(event) {
-  if (event.type === "touchstart") event.preventDefault();
   const nav = $(".nav");
   nav.classList.toggle("active");
   footer.classList.toggle("active");
@@ -16,5 +16,6 @@ function toggleMenu(event) {
   }
 }
 
-btnMobile.addEventListener("click", toggleMenu);
-btnMobile.addEventListener("touchstart", toggleMenu);
+eventos.forEach((eventos) => {
+  btnMobile.addEventListener(eventos, toggleMenu);
+});
